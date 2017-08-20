@@ -25,10 +25,11 @@ module.exports = {
     }
 
     config.resolve.extensions.push('.ts')
+    config.resolve.extensions.push('.tsx')
     config.module.loaders.push({
       test: /\.tsx?$/,
       exclude: [/\.(spec|e2e)\.tsx?$/, /node_modules/],
-      loaders: ['ts']
+      loaders: ['react-hot-loader/webpack', 'ts-loader']
     })
 
     return config
