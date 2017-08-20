@@ -1,0 +1,1 @@
+# kyt-starter-static-typescript
